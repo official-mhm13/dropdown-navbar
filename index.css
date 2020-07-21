@@ -29,9 +29,10 @@ html {
   cursor: pointer;
 }
 
-/* Navbar List Item With Class of Dropdown*/
-.nav__dropdown {
-  position: relative;
+/* Navbar List Item Hover Effect */
+.nav__listItem:hover > .nav__link {
+  background-color: #3282b8;
+  color: #ffffff;
 }
 
 /* Navbar Link */
@@ -46,10 +47,14 @@ html {
   text-align: center;
 }
 
-/* Navbar List Item Hover Effect */
-.nav__listItem:hover > a {
-  background-color: #3282b8;
-  color: #ffffff;
+/* Navbar List Item With Class of Dropdown*/
+.nav__dropdown {
+  position: relative;
+}
+
+/* Navbar List Item With Class of Dropdown Hover Effect to Display The Dropdown List */
+.nav__dropdown:hover .nav__dropdownList {
+  display: block;
 }
 
 /* Navbar Dropdown Unordered List*/
@@ -61,13 +66,8 @@ html {
   list-style: none;
 }
 
-/* Navbar List Item With Class of Dropdown Hover Effect to Display The Dropdown List */
-.nav__dropdown:hover .nav__dropdownList {
-  display: block;
-}
-
 /* Navbar Dropdown List Item Hover Effect */
-.nav__dropdownItem:hover > a {
+.nav__dropdownItem:hover > .nav__dropdownLink {
   background-color: #3282b8;
   color: #ffffff;
 }
